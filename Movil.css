@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  .menu ul {
+      display: inline-flex;
+list-style: none;
+align-items: center;
+  }
+
+  .menu ul li {
+      padding: 15px;
+  }
+  .menu ul li:last-child {
+    margin-right: 0;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .menu-btn {
+    display: none;
+  }
+
+/* Aqui menu */
+
+.menu{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.menu-container{
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7266ba;
+}
+
+
+.logoinspire span{
+  display: block;
+  width: 60px;
+  height: 80px;
+  background-image: url('/IMG/Logo\ Inspire.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+ul{
+  display: inline-flex;
+  list-style: none;
+  align-items: center;
+  font-weight: 200;
+}
+
+li{
+  padding: 25px;
+}
+
+li :hover{
+    background-color: #FF7700;
+  }
+
+li a{
+  color: white;
+  text-decoration: none;}
+
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+  /* Banner */
+
+.Banner-container{
+ width: 100%;
+ height: 100vh;
+ color: #fff;
+ display: inline-flex;
+ align-items: center;
+ 
+}
+
+
+.Banner-container span{
+   position: absolute;
+   z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(./Img/Cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Tittle-banner{
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 41px;
+        line-height: 45px; 
+   }
+
+   .Tittle-banner p{
+    font-size: 19px;
+    margin-bottom: 8px;
+
+   }
+  .button-banner-container a{
+    display: inline-block;
+    padding: 15px 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 25px;
+  }
+
+  .button-banner-container a:hover{
+    background-color: #7266ba;
+}
+  .button--banner{
+    background-color: #ff7700;
+    color: #fff;
+  }
+
+  .button--banner2{
+    border: #ff7700 2px solid;
+    color: #ffffff;
+  }
+
+  .button--banner2:hover{
+    background-color: #7266ba;
+    border: none;
+
+  }
+
+
+
+/*   Banner */
+
+
+.Inspire-info{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 100px 0;
+}
+
+h2{
+    font-size: 30px;
+    color: #ff7700;
+    margin-bottom: 50px;
+    line-height: 43px;
+}
+
+h3{
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.Inspire-info p{
+text-align: left;
+}
+
+/* Inspire ofer */
+
+.Inspire-ofer{
+    width: 100%;
+    background-color: #e9e7e7;
+    padding: 100px 0 ;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Inspire-ofer h3{
+    text-align: center;
+    margin-bottom: 86px;
+
+}
+.ofer-container{
+    width: 70%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.Inspire-ofer h4{
+    font-size: 25px;
+}
+#ofer-card{
+    width: 450px;
+    height: auto;
+    color: #FFF;
+    padding: 65px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 90px;
+}
+
+#ofer-card li{
+    padding: 2px;
+}
+.ofer-card-1{
+    background-color: #A83737;
+    border-radius: 0 50px 0 0;
+}
+.ofer-card-2{
+    background-color: #70A837;
+    border-radius: 0 0 0 50px;
+    
+
+}
+.ofer-card-3{
+    background-color: #FF7700;
+    border-radius: 0px 50px 0 0;
+    
+
+}
+.ofer-card-4{
+    background-color: #414A9E;
+    border-radius: 0 0 50px 0;
+
+}
+
+/* Inspire ofer */
+
+/* slide contents */
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.slides-container {
+    display: flex;
+    width: calc(100% * 6 / 2); /* Total width for 6 images (showing 2 at a time) */
+    transition: transform 0.5s ease;
+}
+
+.image-container {
+    position: relative;
+    width: 16.67%; /* Each image is 16.67% of the total width (100% / 6) */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100vh; /* Full height */
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    cursor: pointer;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    user-select: none;
+}
+
+
+
+
+
+
+
+/* slide contents */
+
+
+
+
+/* Core values */
+.core-values{
+    width: 100%;
+    background-color: #ff7700;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.core-values-main-container{
+  width: 80%;
+  margin: 0 auto;  
+}
+
+#core{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    width: 250px;
+    width: 349px;
+
+}
+
+#core p{
+    font-size: 15px;
+}
+.core-container{
+    display: flex;
+    margin-top: 100px;
+gap: 50px;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.core-container span{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Health-core span{
+    background-image: url(./Icon/Corazon.svg);
+}
+.Prosperity-core span{
+    background-image: url(./Icon/Corazon.svg);
+}
+.Hope-core span{
+    background-image: url(./Icon/Corazon.svg);
+}
+
+
+
+/* Core values */
+
+/* Contact */
+
+.contact-container h3{
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+.Contac-info{
+    width: 300px;
+}
+.Contact{
+    width: 100%;
+    display: inline-flex;
+    padding: 75px 0;
+}
+
+.contact-container{
+    width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    row-gap: 76px;
+}
+.Contact-info-tittle span{
+   font-weight: 400; 
+}
+
+.Contac-info-text{
+    gap: 50px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.Contac-info-text span{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-bottom: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contact-card-1 span{
+    background-image: url(./Icon/Phone.svg);
+}
+.contact-card-2 span{
+    background-image: url(./Icon/Mail.svg);
+}
+.contact-card-3 span{
+    background-image: url(./Icon/Location.svg);
+}
+
+/* Contact */
+
+/* Form */
+
+.Contact-form{
+    width: 450px;
+}
+.form-container {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 300px;
+}
+.form-container h2 {
+    margin-bottom: 15px;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ff7700;
+    border-radius: 3px;
+}
+.form-container button {
+    background-color: #ff7700;
+    color: #fff;
+    padding: 15px 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    margin-top: 25px;
+    border: 0;
+}
+.form-container button:hover {
+    background-color: #7266ba;
+}
