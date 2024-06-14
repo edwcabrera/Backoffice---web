@@ -224,6 +224,7 @@ text-align: left;
     justify-content: space-between;
     flex-direction: column;
     row-gap: 90px;
+    min-width: 330px;
 }
 
 #ofer-card li{
