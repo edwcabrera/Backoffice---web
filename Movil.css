@@ -113,7 +113,7 @@ main{
     height: 100%;
     display: block;
     background-image: url(./Img/Cover.png);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
