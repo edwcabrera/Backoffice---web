@@ -365,13 +365,13 @@ justify-content: center;
 }
 
 .Health-core span{
-    background-image: url(./Icon/Heart.svg);
+    background-image: url(./Icon/Heart.png);
 }
 .Prosperity-core span{
-    background-image: url(./Icon/Prosperidad.svg);
+    background-image: url(./Icon/Prosperity.png);
 }
 .Hope-core span{
-    background-image: url(./Icon/Corazon.svg);
+    background-image: url(./Icon/Hope.png);
 }
 
 
